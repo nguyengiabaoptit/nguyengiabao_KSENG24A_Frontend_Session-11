@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+body {
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.circle {
+    color: white;
+    padding: 10px 20px;
+    font-size: 40px;
+    display: flex;
+    gap: 80px;
+}
+
+.line {
+    color: white;
+    padding: 0 20px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    color: white;
+    background-color: rgb(201, 16, 139);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 500px);
+
+}
+
+.main {
+    color: white;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 600px);
+}
+
+.t1 {
+    background-color: rgb(228, 36, 216);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.foot{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    color: white;
+    min-height: calc(100vh - 550px);
+}
+
+.f1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(238, 112, 236);
+    width: 100%;
+}
+
+.list {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        height: 180px;
+    }
+
+    .main {
+        height: 120px;
+    }
+
+    .foot {
+        min-height: 170px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    .header {
+        height: 100px;
+    }
+    
+    .main {
+        flex-wrap: wrap;
+        height: 100px;
+    }
+
+    .t1 {
+        flex-basis: calc(100% / 2 - 20px);
+        height: 120px;
+    }
+
+    .foot {
+        margin: 160px 0px;
+        flex-direction: column;
+    }
+
+    .f1 {
+        min-height: 150px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .line {
+        display: none;
+    }
+
+    .list {
+        color: white;
+        font-size: 30px;
+        padding: 15px 20px;
+        display: block;
+    }
+
+    .header {
+        height: 80px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .t1 {
+        min-height: 80px;
+    }
+
+    .foot {
+        flex-direction: column;
+    }
+
+    .f1 {
+        min-height: 80px;
+    }
+    
+    
+}
